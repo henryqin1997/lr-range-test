@@ -240,7 +240,7 @@ def main(lr=0.1):
     return best_acc
 
 pbounds = {
-    'lr': (1e-5, 0.5),
+    'lr': (args.lr_min, args.lr_max),
     }
 
 bayes_optimizer = BayesianOptimization(
